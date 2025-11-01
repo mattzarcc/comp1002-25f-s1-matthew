@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Order Your Perfect Pizza</h1>
+    <p>
+      Craving something yummy? Choose your pizza toppings!.
+      Fill out the form below and we’ll get it cooking!
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <form action="confirmation.php" method="POST">
+      <!-- Customer Info -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </fieldset>
+
+      <!-- Pizza Details -->
+      <fieldset>
+        <legend>Pizza Preferences</legend>
+
+        <label for="quantity">Number of Pizzas:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required />
+
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small (6 slices)</option>
+          <option value="medium">Medium (8 slices)</option>
+          <option value="large">Large (12 slices)</option>
+        </select>
+
+        <p>Shape:</p>
+        <label><input type="radio" name="shape" value="round" checked /> Round</label>
+        <label><input type="radio" name="shape" value="square" /> Square</label>
+
+        <p>Crust Type:</p>
+        <label><input type="radio" name="crust" value="thin" /> Thin Crust</label>
+        <label><input type="radio" name="crust" value="deep" /> Deep Dish</label>
+        <label><input type="radio" name="crust" value="stuffed" /> Stuffed Crust</label>
+
+        <p>Toppings:</p>
+        <label><input type="checkbox" name="toppings[]" value="pepperoni" /> Pepperoni</label>
+        <label><input type="checkbox" name="toppings[]" value="mushrooms" /> Mushrooms</label>
+        <label><input type="checkbox" name="toppings[]" value="onions" /> Onions</label>
+        <label><input type="checkbox" name="toppings[]" value="olives" /> Olives</label>
+        <label><input type="checkbox" name="toppings[]" value="extra-cheese" /> Extra Cheese</label>
+      </fieldset>
+
+      <!-- Order Type -->
+      <fieldset>
+        <legend>Order Type</legend>
+        <label><input type="radio" name="order_type" value="takeout" checked /> Take Out</label>
+        <label><input type="radio" name="order_type" value="delivery" /> Delivery</label>
+        <label><input type="radio" name="order_type" value="eat-in" /> Eat In</label>
+
+        <label for="delivery-date">Preferred Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery_date" />
+
+
+
+      <!-- Fun Extras -->
+      <fieldset>
+        <legend>Customize Your Experience</legend>
+        <label for="box-color">Box Color:</label>
+        <input type="color" id="box-color" name="box_color" />
+
+        <label for="spice-level">Spice Level:</label>
+        <input type="range" id="spice-level" name="spice_level" min="0" max="10" />
+      </fieldset>
+
+      <!-- Submission -->
+      <button type="submit">Place Order</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pizza Planet. All rights reserved.</p>
+    <img src="images/pizza2.webp     " alt="Pizza Planet Logo" />
+  </footer>
+</body>
+</html>
