@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+html {
+    background-color: lightskyblue;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: black;
+    font-size: 10px;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 768px;
+    max-width: 1024px;
+}
+
+header {
+    font-size: 1.8rem;
+}
+
+/* STEP 1: Float the HEADER IMG to the left */
+header img {
+    float: left;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* STEP 2: Align HEADER H1 and H2 text to the right */
+header h1,
+header h2 {
+    text-align: right;
+}
+
+/* STEP 3a: Remove margin-bottom from H1 */
+header h1 {
+    margin-bottom: 0;
+}
+
+/* STEP 3b: Remove margin-top from H2 */
+header h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+/* STEP 4d: Remove UL padding */
+header nav ul {
+    padding-left: 0;
+}
+
+/* STEP 4a–4c: Style LI elements */
+header nav li {
+    /* border: 1px dashed red;  <-- STEP 4e: commented out */
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+main {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* STEP 5a–5b: Style MAIN SECTION */
+main section {
+    /* border: 1px dotted hotpink; <-- STEP 5d: commented out */
+    width: 60%;
+    padding: 1em;
+}
+
+main section time {
+    font-style: italic;
+}
+
+/* STEP 5c: Style MAIN ASIDE */
+main aside {
+    /* border: 1px solid orange; <-- STEP 5d: commented out */
+    width: 40%;
+    padding: 1em 1em 1em 0;
+}
+
+/* STEP 7a–7b: Target block images in ASIDE */
+aside img[alt$="block"] {
+    position: relative;
+    left: -3rem;
+}
+
+.new-feature {
+    padding-left: 25px;
+    background-image: url("../images/new.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#emailAddress {
+    font-weight: bold;
+}
+
+[rel="external"] {
+    padding-right: 20px;
+    background-image: url("../images/extlink.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+main a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+blockquote::first-letter {
+    font-size: 2em;
+}
+
+/* STEP 6: Add margin-top to FOOTER */
+footer {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+footer p {
+    text-align: right;
+}
+
+section > p {
+    text-indent: 2em;
+}
+
+h1, h2, footer {
+    color: white;
+}
