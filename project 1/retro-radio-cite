@@ -1,0 +1,15 @@
+/radio-site
+   /css
+      style.css
+   /js
+      script.js
+   /images
+      radio-image-1.jpg
+      radio-image-2.jpg
+      radio-image-3.jpg
+   index.html
+   about.html
+   promotion.html
+   feedback.html
+   support.html
+   corporate.html
