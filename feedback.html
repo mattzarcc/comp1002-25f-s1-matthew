@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Classic Transistor Radio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="promotion.html">Promotion</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="corporate.html">Corporate Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Feedback</h1>
+    <p>Tell us your thoughts/problems on the radio!</p>
+  </header>
+
+  <!-- Feedback Section with Side Images -->
+  <section id="feedback-container" class="description-section">
+    <figure class="side-box">
+      <img src="images/radio-image-8.png" alt="Retro radio side view" class="side-image">
+      <figcaption>artofit.org</figcaption>
+    </figure>
+
+    <div id="feedback">
+      <h2>Customer Feedback</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="rating">Satisfaction (1–5):</label>
+        <select id="rating" required>
+          <option value="">Select</option>
+          <option value="1">1 – Poor</option>
+          <option value="2">2</option>
+          <option value="3">3 – Average</option>
+          <option value="4">4</option>
+          <option value="5">5 – Excellent</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="thankYouMessage" class="hidden">Thanks for your feedback!</p>
+    </div>
+
+    <figure class="side-box">
+      <img src="images/radio-image-9.png" alt="Vintage radio close-up" class="side-image">
+      <figcaption>artofit.org</figcaption>
+    </figure>
+  </section>
+</body>
+</html>
